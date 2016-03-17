@@ -18,14 +18,14 @@ class main_window(QWidget):
                            "background-color: white;"
 
 
-        self.textfield = QLineEdit(self)
-        self.textfield.move(10, 20)
-        self.textfield.setFixedWidth(220)
-
-        self.button = QPushButton("Clear", self)
-        self.button.move(250, 15)
-        self.button.clicked.connect(self.clearField)
-
+        # self.textfield = QLineEdit(self)
+        # self.textfield.move(10, 20)
+        # self.textfield.setFixedWidth(220)
+        #
+        # self.button = QPushButton("Clear", self)
+        # self.button.move(250, 15)
+        # self.button.clicked.connect(self.clearField)
+        #
 
 
     def clearField(self, event):

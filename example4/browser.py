@@ -7,9 +7,6 @@ from PyQt4 import QtCore, QtGui, QtWebKit
 class Browser(QtGui.QMainWindow):
 
     def __init__(self):
-        """
-            Initialize the browser GUI and connect the events
-        """
 
         QtGui.QMainWindow.__init__(self)
         self.resize(800,600)
@@ -51,12 +48,9 @@ class Browser(QtGui.QMainWindow):
         self.browse()
 
     def browse(self):
-        """
-            Make a web browse on a very specific url and show the page on the
-            Webview widget.
-        """
 
         url = self.tb_url.text() if self.tb_url.text() else self.default_url
+        
         self.html.load(QtCore.QUrl(url))
         self.html.show()
 
