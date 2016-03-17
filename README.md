@@ -2,7 +2,7 @@
 
 Introducing PyQt4
 
-A comprehensive set of widgets: Takem From Offcial Wiki Page : https://wiki.python.org/moin/PyQt4
+Offcial Wiki Page : https://wiki.python.org/moin/PyQt4
 
 Flexible layout managers
 
