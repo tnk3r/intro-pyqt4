@@ -34,5 +34,3 @@ WebKit browser engine integration.
 
 Support for audio and video playback.
 
-
-## work in Progress
