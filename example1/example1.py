@@ -2,7 +2,7 @@
 
 
 import sys
-from PyQt4.QtGui import QApplication, QMainWindow
+from PyQt4.QtGui import QApplication, QMainWindow, QAction
 
 from PyQt4.QtGui import QPixmap, QLabel, QPushButton, QLineEdit
 
@@ -11,6 +11,17 @@ class main(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
         self.setFixedSize(400, 600)
+
+
+        exitAction = QAction('&Exit', self)
+        exitAction.setShortcut('Ctrl+Q')
+        exitAction.setStatusTip('Exit application')
+        exitAction.triggered.connect(app.quit)
+
+        self.menubar = self.menuBar()
+        self.file_menu = self.menubar.addMenu("&File")
+        self.file_menu.addAction(exitAction)
+
         #self.setWindowTitle("Hello NSL!")
 
         # # 2
@@ -37,8 +48,8 @@ class main(QMainWindow):
         # self.label.setStyleSheet("color: red; font-size: 40px;")
 
 
-    # def console_print(self, event):
-    #     print "Hello NSL"
+    def console_print(self, event):
+        print "Hello NSL"
 
         # # 3
         # print self.textfield.text()
@@ -48,7 +59,6 @@ class main(QMainWindow):
 
         # # 5
         # self.textfield.clear()
-
 
 
 app = QApplication(sys.argv)
