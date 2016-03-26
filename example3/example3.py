@@ -56,12 +56,14 @@ class main(QMainWindow):
         self.filename = QFileDialog.getOpenFileName(self, 'Open File',".","(*.txt)")
 
     # Return if Filename is empty, to handle pressing 'Cancel'
-
         if self.filename == "":
+
             return 1
+
     # Put the contents of 'filename' into the QTextField with setText()
 
         if self.filename:
+
             with open(self.filename, "rt") as file:
                 self.textField.setText(file.read())
 
@@ -71,6 +73,7 @@ class main(QMainWindow):
 
         if self.filename == "":
             return 1
+
     # Append .txt to filename
         if not self.filename.endsWith(".txt"):
             self.filename += ".txt"
