@@ -60,3 +60,6 @@ if __name__ == "__main__":
     main = Browser()
     main.show()
     sys.exit(app.exec_())
+
+
+
