@@ -1,6 +1,13 @@
 #!/usr/bin/python
 
 
+# Check out: https://wiki.python.org/moin/PyQt/Tutorials
+# SIP https://www.riverbankcomputing.com/software/sip/intro
+# zetcode.com/gui/pyqt4/
+
+# Class Reference:   http://pyqt.sourceforge.net/Docs/PyQt4/classes.html
+
+
 import sys
 from PyQt4.QtGui import QApplication, QMainWindow, QAction
 
