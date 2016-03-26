@@ -12,8 +12,6 @@ class main(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
         self.setWindowTitle("Images!")
-        self.resize(300, 300)
-
 
     ## Create BackGround to Load images into
 
@@ -49,7 +47,6 @@ class main(QMainWindow):
 
         self.menubar = self.menuBar()
         self.file_menu = self.menubar.addMenu("&File")
-        self.tool_menu = self.menubar.addMenu("&Tools")
 
     ## Link the File Menu to the QActions.
 
@@ -71,8 +68,8 @@ class main(QMainWindow):
 
     ## Resize Window to the Size of opened image
 
-        self.resize(self.bg_img.size())  #<---~ 'self is the QMainWindow'
-        self.bg.resize(self.bg_img.size())
+        self.setFixedSize(self.bg_img.size())  #<---~ 'self is the QMainWindow'
+        self.bg.setFixedSize(self.bg_img.size())
 
 
     ## set the Image to the background QLabel
