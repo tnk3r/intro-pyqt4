@@ -75,17 +75,6 @@ class example1(QMainWindow):
         # self.timer.setStyleSheet("color: white; border: 1px Solid White; font-size: 40px")
         # self.timer.setAlignment(Qt.AlignCenter)
 
-
-#        while True:
-#            time.sleep(1)
-#            date = time.strftime('%I:%M:%S')
-#            self.timer.setStyleSheet("color: white; border: 1px Solid White; font-size: 25px")
-#            self.timer.setText(date)
-#            time.sleep(1)
-#            date = time.strftime('%I %M %S')
-#            self.timer.setStyleSheet("color: Red; border: 3px Solid Orange; font-size: 25px")
-#            self.timer.setText(date)
-
         # QShortcut(QKeySequence("Return"), self.button, self.text_write)
         # self.thread = signals()
         # self.thread.time_signal.connect(self.timer.setText)
