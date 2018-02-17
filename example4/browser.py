@@ -3,6 +3,7 @@
 import sys
 from PyQt4 import QtCore, QtGui, QtWebKit
 
+default_url = "http:032.la"
 
 class Browser(QtGui.QMainWindow):
 
@@ -43,8 +44,7 @@ class Browser(QtGui.QMainWindow):
         self.connect(self.bt_back, QtCore.SIGNAL("clicked()"), self.html.back)
         self.connect(self.bt_ahead, QtCore.SIGNAL("clicked()"), self.html.forward)
 
-        self.default_url = "http://032.la"
-        self.tb_url.setText(self.default_url)
+        self.tb_url.setText(default_url)
         self.browse()
 
     def browse(self):
