@@ -1,5 +1,7 @@
 # intro-pyqt4
 
+git clone https://github.com/tnk3r/intro-pyqt4
+
 Introducing PyQt4
 
 Offcial Wiki Page : https://wiki.python.org/moin/PyQt4
